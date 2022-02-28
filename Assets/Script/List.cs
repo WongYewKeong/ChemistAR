@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public static class ButtonExtension
 {
@@ -52,5 +53,9 @@ public class List : MonoBehaviour
 		Debug.Log ("------------item " + itemIndex + " clicked---------------");
 		Debug.Log ("exp " + allExp[itemIndex].Exp);
 		Debug.Log ("name " + allExp [itemIndex].Name);
+
+		if(itemIndex==0){
+			SceneManager.LoadScene("AR");
+		}
 	}
 }
