@@ -10,6 +10,8 @@ public class Scenechange : MonoBehaviour
     public GameObject chooseExp, experiment5;
     public GameObject expSem1, expSem2;
     public GameObject prelab;
+    
+    public GameObject Active, Hide;
 
 
     public void ChangeScene(string sceneName)
@@ -53,6 +55,22 @@ public class Scenechange : MonoBehaviour
     {
         experiment5.SetActive(true);
         prelab.SetActive(false);
+    }
+
+    public void OpenUrl()
+    {
+        Application.OpenURL("https://chemcollective.oli.cmu.edu/vlabs");
+    }
+
+    public void OpenUrlVideo()
+    {
+        Application.OpenURL("https://www.youtube.com/watch?v=QNCJZKy8v88");
+    }
+
+    public void ChangObj()
+    {
+        Active.SetActive(true);
+        Hide.SetActive(false);
     }
 
 

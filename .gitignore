@@ -70,3 +70,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Firebase/Plugins/x86_64/FirebaseCppApp-8_8_0.so
+Packages/com.ptc.vuforia.engine-10.4.4.tgz
+Packages/com.ptc.vuforia.engine-10.5.5.tgz
+Packages/com.ptc.vuforia.engine-10.2.5.tgz
+Packages/com.ptc.vuforia.engine-10.1.4.tgz
