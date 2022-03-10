@@ -27,6 +27,8 @@ public class List : MonoBehaviour
 
 	[SerializeField] Experiment[] allExp;
 
+	public GameObject main,exp1,exp2;
+
 	void Start ()
 	{
 		GameObject buttonTemplate = transform.GetChild (0).gameObject;
@@ -55,7 +57,11 @@ public class List : MonoBehaviour
 		Debug.Log ("name " + allExp [itemIndex].Name);
 
 		if(itemIndex==0){
-			SceneManager.LoadScene("AR");
+			main.SetActive(false);
+			exp1.SetActive(true);
+		}else if(itemIndex==1){
+			main.SetActive(false);
+			exp2.SetActive(true);
 		}
 	}
 }

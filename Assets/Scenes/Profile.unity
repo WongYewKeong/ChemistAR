@@ -1250,7 +1250,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 
 --- !u!222 &783761429
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1347,6 +1347,7 @@ GameObject:
   - component: {fileID: 875294332}
   - component: {fileID: 875294331}
   - component: {fileID: 875294335}
+  - component: {fileID: 875294336}
   m_Layer: 5
   m_Name: Profile
   m_TagString: Untagged
@@ -1459,6 +1460,21 @@ MonoBehaviour:
   _nameText: {fileID: 1607228360}
   _emailText: {fileID: 1145176416}
   userName: {fileID: 1542342096}
+--- !u!114 &875294336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875294330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961d9a303f05d8042976253a74dfda90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _expCompleted: {fileID: 1406751326}
+  _quizCompleted: {fileID: 783761428}
+  _overall: {fileID: 877882210}
 --- !u!1 &877882208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,7 +1545,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0%
+  m_Text: 
 --- !u!222 &877882211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2623,7 +2639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 
 --- !u!222 &1406751327
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3522,13 +3538,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7fbef9f4638004bab17f15f7a63513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chooseExp: {fileID: 0}
   experiment5: {fileID: 0}
   expSem1: {fileID: 0}
   expSem2: {fileID: 0}
   prelab: {fileID: 0}
-  Active: {fileID: 0}
-  Hide: {fileID: 0}
+  url: 
 --- !u!4 &1880741965
 Transform:
   m_ObjectHideFlags: 0

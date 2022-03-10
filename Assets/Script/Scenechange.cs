@@ -7,29 +7,39 @@ using UnityEngine.UI;
 
 public class Scenechange : MonoBehaviour
 {
-    public GameObject chooseExp, experiment5;
+    public GameObject experiment5;
     public GameObject expSem1, expSem2;
     public GameObject prelab;
-    
-    public GameObject Active, Hide;
 
+    public string url;
+
+
+
+
+    void Start()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     public void ChangeScene(string sceneName)
     {
+
         SceneManager.LoadScene(sceneName);
     }
+
+    public void PreviousScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+
+    }
+
 
     public void ResetScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void ChangeExp()
-    {
-        experiment5.SetActive(true);
-        chooseExp.SetActive(false);
 
-    }
 
     public void ChangeSem1()
     {
@@ -64,14 +74,9 @@ public class Scenechange : MonoBehaviour
 
     public void OpenUrlVideo()
     {
-        Application.OpenURL("https://www.youtube.com/watch?v=QNCJZKy8v88");
+        Application.OpenURL(url);
     }
 
-    public void ChangObj()
-    {
-        Active.SetActive(true);
-        Hide.SetActive(false);
-    }
-
+    
 
 }

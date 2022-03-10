@@ -46,10 +46,11 @@ public class List2 : MonoBehaviour
 		Debug.Log ("------------item " + itemIndex + " clicked---------------");
 		Debug.Log ("exp " + allExp[itemIndex].Exp);
 		Debug.Log ("name " + allExp [itemIndex].Name);
-
+		if(itemIndex==4){
+			SceneManager.LoadScene("Experiment4");
+		}
 		if(itemIndex==5){
-			chooseExp.SetActive(false);
-			expChosen.SetActive(true);
+			SceneManager.LoadScene("Experiment5");
 		}
 	}
 }

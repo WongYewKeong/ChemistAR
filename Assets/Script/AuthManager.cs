@@ -25,6 +25,8 @@ public class AuthManager : MonoBehaviour
     public FirebaseUser user;
     FirebaseFirestore db;
 
+    public int expcomplete, quizcomplete, overall = 0;
+
 
     bool isSignedIn = false;
 
@@ -124,6 +126,7 @@ public class AuthManager : MonoBehaviour
 
             db = FirebaseFirestore.DefaultInstance;
             DocumentReference docRef = db.Collection("users").Document(newUser.UserId);
+            DocumentReference progressRef = db.Collection("users").Document(newUser.UserId).Collection("progress").Document("Learning Progress");
 
             Dictionary<string, object> users = new Dictionary<string, object>
 {
@@ -135,6 +138,18 @@ public class AuthManager : MonoBehaviour
             {
                 Debug.Log("Added data to the document in the users collection.");
             });
+
+            Dictionary<string, object> progress = new Dictionary<string, object>
+{
+        { "ExperimentCompleted",  expcomplete},
+        { "QuizzesCompleted", quizcomplete },
+        { "OverallProgress",  overall}
+
+};
+            progressRef.SetAsync(progress).ContinueWithOnMainThread(task =>
+             {
+                 Debug.Log("Added data to the document in the progress collection.");
+             });
 
 
         });

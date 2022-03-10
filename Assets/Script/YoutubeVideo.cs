@@ -7,10 +7,11 @@ namespace YoutubePlayer
 {
 public class YoutubeVideo : MonoBehaviour
 {
+    public string url;
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<VideoPlayer>().PlayYoutubeVideoAsync("https://www.youtube.com/watch?v=QNCJZKy8v88");
+        GetComponent<VideoPlayer>().PlayYoutubeVideoAsync(url);
     }
 
     // Update is called once per frame

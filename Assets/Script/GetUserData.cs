@@ -59,8 +59,7 @@ public class GetUserData : MonoBehaviour
 
         userRef.UpdateAsync(updates).ContinueWithOnMainThread(task =>
         {
-            Debug.Log(
-                    "Updated data");
+            Debug.Log("Updated data");
         });
     }
 

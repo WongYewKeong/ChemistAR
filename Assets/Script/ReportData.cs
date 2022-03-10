@@ -20,4 +20,7 @@ public struct ReportData
 
     [FirestoreProperty]
     public string Conclusion { get; set; }
+
+    [FirestoreProperty]
+    public string References { get; set; }
 }
