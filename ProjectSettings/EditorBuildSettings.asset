@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Experiment1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/ChooseExperiment_s1.unity
+    path: Assets/Scenes/Choose Experiment.unity
     guid: 04a26875a195fd24f9178e05cce5a0a9
   - enabled: 1
     path: Assets/Scenes/Profile.unity
@@ -35,9 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NonAR.unity
     guid: 635c77d4dc72a19419d1abaa28dcb39a
-  - enabled: 1
-    path: Assets/Scenes/ChooseExperiment_s2.unity
-    guid: fd303c01392d23144b1baf6b4ca192ac
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: e9f8df194c1888a4faadbde1c32e6557, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f5318b9cdd3219d49bd11993c60f23f0, type: 2}

@@ -7,19 +7,23 @@ using UnityEngine.UI;
 
 public class Scenechange : MonoBehaviour
 {
+    public GameObject experiment5;
+    public GameObject expSem1, expSem2;
+    public GameObject prelab;
 
-    
-    public GameObject prefab;
+    public string url;
 
+
+
+
+    void Start()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     public void ChangeScene(string sceneName)
     {
 
-        SceneManager.LoadScene(sceneName);
-    }
-    public void ChangeSceneLandscape(string sceneName)
-    {
-        Screen.orientation = ScreenOrientation.LandscapeLeft;
         SceneManager.LoadScene(sceneName);
     }
 
@@ -28,11 +32,7 @@ public class Scenechange : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
     }
-    public void PortraitMode()
-    {
-        Screen.orientation = ScreenOrientation.Portrait;
 
-    }
 
     public void ResetScene()
     {
@@ -40,20 +40,43 @@ public class Scenechange : MonoBehaviour
     }
 
 
+
+    public void ChangeSem1()
+    {
+        expSem1.SetActive(true);
+        expSem2.SetActive(false);
+
+    }
+
+    public void ChangeSem2()
+    {
+        expSem2.SetActive(true);
+        expSem1.SetActive(false);
+
+    }
+
+    public void Prelab()
+    {
+        experiment5.SetActive(false);
+        prelab.SetActive(true);
+    }
+
+    public void PrelabBack()
+    {
+        experiment5.SetActive(true);
+        prelab.SetActive(false);
+    }
+
     public void OpenUrl()
     {
         Application.OpenURL("https://chemcollective.oli.cmu.edu/vlabs");
     }
 
-    public void OpenUrlVideo(string url)
+    public void OpenUrlVideo()
     {
         Application.OpenURL(url);
     }
 
-    public void InstantiateObj()
-    {
-        GameObject leftMenu = Instantiate(prefab) as GameObject;
-        leftMenu.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
-    }
+    
 
 }
