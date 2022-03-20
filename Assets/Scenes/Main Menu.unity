@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1462,10 +1462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7fbef9f4638004bab17f15f7a63513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chooseExp: {fileID: 0}
-  experiment1: {fileID: 0}
-  expSem1: {fileID: 0}
-  expSem2: {fileID: 0}
+  url: 
 --- !u!4 &1719874949
 Transform:
   m_ObjectHideFlags: 0
@@ -1693,7 +1690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6335038328556851510, guid: e397534993a3daa4fb62356a2b6e1856, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Choose Experiment
+      value: ChooseExperiment_s1
       objectReference: {fileID: 0}
     - target: {fileID: 6335038328556851510, guid: e397534993a3daa4fb62356a2b6e1856, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

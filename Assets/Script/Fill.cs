@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Fill : MonoBehaviour
 {
-    Renderer rend;
+    public Renderer rend;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
-        rend=GetComponent<Renderer>();
+        
 
         
     }
@@ -19,7 +21,10 @@ public class Fill : MonoBehaviour
         
     }
 
-    public void fillAcid(){
-        rend.material.SetFloat("Fill",0.6f);
+    public void fillAcid(float floatvalue){
+        
+        rend.material.SetFloat("Fill",floatvalue);
     }
+
+    
 }
