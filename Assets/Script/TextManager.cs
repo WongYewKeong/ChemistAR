@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class TextManager : MonoBehaviour
 {
     public Text procedure;
+    
     private Queue<string> sentences;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +26,7 @@ public class TextManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
-
+        
         DisplayNextSentence();
     }
 
@@ -36,11 +39,14 @@ public class TextManager : MonoBehaviour
         }
         string sentence = sentences.Dequeue();
         procedure.text = sentence;
+        
+        
     }
 
     void EndProcedure()
     {
         Debug.Log("End of Experiment");
+        
     }
 
 }
