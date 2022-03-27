@@ -41,7 +41,7 @@ public class GetExpData : MonoBehaviour
 
       ExperimentData expdata = snapshot.ConvertTo<ExperimentData>();
       _experimentName.text = expdata.ExpName;
-      _Introduction.text = expdata.Introduction.Replace("nn","\n");
+      _Introduction.text = expdata.Introduction.Replace("nn","\n").Replace("//","nn");
       _Materials.text = expdata.Materials.Replace("nn","\n").Replace("//","nn");
       _Objective.text = expdata.Objective.Replace("nn","\n");
       _Procedure.text = expdata.Procedure.Replace("nn","\n").Replace("//","nn");

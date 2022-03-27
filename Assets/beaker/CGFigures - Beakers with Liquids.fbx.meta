@@ -3,7 +3,17 @@ guid: a865bda0fb492024f913045a8718336e
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 250 mL Beaker
+    second: {fileID: 2100000, guid: 392865750ec844e4f9851a08bc5cc05c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base Glass
+    second: {fileID: 2100000, guid: 392865750ec844e4f9851a08bc5cc05c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

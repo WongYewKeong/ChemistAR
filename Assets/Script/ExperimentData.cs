@@ -4,7 +4,7 @@ using UnityEngine;
 using Firebase.Firestore;
 
 [FirestoreData]
-public struct ExperimentData
+public class ExperimentData
 
 {
     [FirestoreProperty]

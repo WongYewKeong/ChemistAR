@@ -4,7 +4,7 @@ using UnityEngine;
 using Firebase.Firestore;
 
 [FirestoreData]
-public struct UserData
+public class UserData
 {
     [FirestoreProperty]
     public string Email{ get; set; }

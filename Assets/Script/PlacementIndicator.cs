@@ -8,6 +8,7 @@ public class PlacementIndicator : MonoBehaviour
 {
 
     private ARRaycastManager rayManager;
+    [SerializeField]
     private GameObject visual;
 
      void Start()
@@ -22,7 +23,7 @@ public class PlacementIndicator : MonoBehaviour
 
     }
 
-     void Update()
+      void Update()
     {
         // shoot a raycast from the center of the screen
         List<ARRaycastHit> hits = new List<ARRaycastHit>();
