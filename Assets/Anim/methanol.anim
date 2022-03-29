@@ -607,15 +607,15 @@ AnimationClip:
     floatParameter: 0.488
     intParameter: 0
     messageOptions: 0
-  - time: 0.96666664
-    functionName: hideObject
+  - time: 0.9
+    functionName: activeObject
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.96666664
-    functionName: activeObject
+    functionName: hideObject
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

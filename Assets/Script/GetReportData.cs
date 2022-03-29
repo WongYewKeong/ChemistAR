@@ -19,7 +19,7 @@ public class GetReportData : MonoBehaviour
     [SerializeField] private TMP_Text _References;
     [SerializeField] private string docName;
 
-    
+
 
     public GameObject ReportEmpty, ReportRecord;
 
@@ -48,7 +48,7 @@ public class GetReportData : MonoBehaviour
               _Conclusion.text = reportdata.Conclusion;
               _References.text = reportdata.References;
 
-              
+
 
               Debug.Log(user.UserId);
 
@@ -72,19 +72,19 @@ public class GetReportData : MonoBehaviour
         DocumentReference reportRef = db.Collection("users").Document(user.UserId).Collection("report").Document(docName);
 
         reportRef.GetSnapshotAsync().ContinueWithOnMainThread(task =>
-{
-    DocumentSnapshot snapshot = task.Result;
-    if (snapshot.Exists)
     {
-        ReportRecord.SetActive(true);
-        ReportEmpty.SetActive(false);
-    }
-    else
-    {
-        
-        ReportRecord.SetActive(false);
-        ReportEmpty.SetActive(true);
-    }
-});
+        DocumentSnapshot snapshot = task.Result;
+        if (snapshot.Exists)
+        {
+            ReportRecord.SetActive(true);
+            ReportEmpty.SetActive(false);
+        }
+        else
+        {
+
+            ReportRecord.SetActive(false);
+            ReportEmpty.SetActive(true);
+        }
+    });
     }
 }

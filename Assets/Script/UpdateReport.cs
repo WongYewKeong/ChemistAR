@@ -49,11 +49,11 @@ public class UpdateReport : MonoBehaviour
         _listenerRegistration.Stop();
     }
 
-    // Update is called once per frame
+
     public void UpdateReportData()
     {
         DocumentReference reportRef = db.Collection("users").Document(user.UserId).Collection("report").Document(docName);
-         Dictionary<string, object> updates = new Dictionary<string, object>
+        Dictionary<string, object> updates = new Dictionary<string, object>
     {
         { "Introduction",  _IntroductionInput.text},
         { "Procedure",  _ProcedureInput.text},
