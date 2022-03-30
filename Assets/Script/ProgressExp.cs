@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class ProgressExp : MonoBehaviour
 {
     public Text progressText;
+
     int progress = 0;
+
 
     public void progressInt()
     {
@@ -16,7 +18,7 @@ public class ProgressExp : MonoBehaviour
 
     public void endExperiment()
     {
-        progressText.text="100%";
+        progressText.text = "100%";
     }
 
 }

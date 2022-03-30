@@ -47,10 +47,14 @@ public class List : MonoBehaviour
 				ItemClicked (i);
 			});*/
             g.GetComponent<Button>().AddEventListener(i, ItemClicked);
+
+
         }
 
         Destroy(buttonTemplate);
     }
+
+
 
     void ItemClicked(int itemIndex)
     {
@@ -77,15 +81,18 @@ public class List : MonoBehaviour
         {
             main.SetActive(false);
             exp6.SetActive(true);
-        }else if (itemIndex == 4)
+        }
+        else if (itemIndex == 4)
         {
             main.SetActive(false);
             exp7.SetActive(true);
-        }else if (itemIndex == 5)
+        }
+        else if (itemIndex == 5)
         {
             main.SetActive(false);
             exp8.SetActive(true);
-        }else if (itemIndex == 6)
+        }
+        else if (itemIndex == 6)
         {
             main.SetActive(false);
             exp9.SetActive(true);

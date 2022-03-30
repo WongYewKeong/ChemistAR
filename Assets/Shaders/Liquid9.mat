@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Liquid9
-  m_Shader: {fileID: -6465566751694194690, guid: f2ab001edb2cd26489de66e9735688b0, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 451a62c4bfe04664f9ea822f4f1e20b7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -33,10 +33,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Fill: 0.544
+    - Fill: 0
     - _WobbleX: 0
     - _WobbleZ: 0
     m_Colors:
-    - SideColor: {r: 1, g: 1, b: 1, a: 0}
-    - TopColor: {r: 1, g: 1, b: 1, a: 1}
+    - SideColor: {r: 0.75849056, g: 1, b: 0.99304205, a: 1}
+    - TopColor: {r: 0.7607843, g: 1, b: 0.96259516, a: 1}
   m_BuildTextureStacks: []

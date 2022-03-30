@@ -1475,6 +1475,10 @@ MonoBehaviour:
   _expCompleted: {fileID: 1406751326}
   _quizCompleted: {fileID: 783761428}
   _overall: {fileID: 877882210}
+  active: {fileID: 0}
+  hide: {fileID: 0}
+  completed: {fileID: 0}
+  key: 
 --- !u!1 &877882208
 GameObject:
   m_ObjectHideFlags: 0
@@ -3538,11 +3542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7fbef9f4638004bab17f15f7a63513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  experiment5: {fileID: 0}
-  expSem1: {fileID: 0}
-  expSem2: {fileID: 0}
-  prelab: {fileID: 0}
-  url: 
+  prefab: {fileID: 0}
 --- !u!4 &1880741965
 Transform:
   m_ObjectHideFlags: 0

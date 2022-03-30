@@ -14,8 +14,13 @@ public class GetLearningProgress : MonoBehaviour
     [SerializeField] private Text _overall;
 
     int expcomplete;
+    int quizcomplete;
+    double overall;
 
-    public GameObject active, hide;
+    int total;
+
+
+    public GameObject active, hide, completed;
     FirebaseFirestore db;
     FirebaseAuth auth;
     FirebaseUser user;
@@ -36,6 +41,9 @@ public class GetLearningProgress : MonoBehaviour
           {
               LearningProgressData learningprogress = snapshot.ConvertTo<LearningProgressData>();
               expcomplete = learningprogress.ExperimentCompleted;
+             // quizcomplete = learningprogress.QuizzesCompleted;
+              //total = expcomplete + quizcomplete;
+              Debug.Log(total);
 
               _expCompleted.text = learningprogress.ExperimentCompleted.ToString();
               _quizCompleted.text = learningprogress.QuizzesCompleted.ToString();
@@ -76,6 +84,7 @@ public class GetLearningProgress : MonoBehaviour
 
 
             });
+
     }
 
     void Update()
@@ -84,12 +93,33 @@ public class GetLearningProgress : MonoBehaviour
         {
             active.SetActive(true);
             hide.SetActive(false);
+            completed.SetActive(true);
         }
         else if (PlayerPrefs.GetInt(key) == 2)
         {
             hide.SetActive(true);
             active.SetActive(false);
+            completed.SetActive(false);
         }
+       /* overall = total / 32.0f * 100;
+        _overall.text = Math.Ceiling(overall).ToString() + "%";
+        Debug.Log(overall);
+        DocumentReference progressRef = db.Collection("users").Document(user.UserId).Collection("progress").Document("Learning Progress");
+
+        Dictionary<string, object> updates = new Dictionary<string, object>
+    {
+        { "OverallProgress",  Math.Ceiling(overall) },
+
+
+
+    };
+
+        progressRef.UpdateAsync(updates).ContinueWithOnMainThread(task =>
+            {
+                Debug.Log("Updated progress data");
+
+            });*/
+
     }
     public void UpdateExpUnComplete()
     {
@@ -111,6 +141,30 @@ public class GetLearningProgress : MonoBehaviour
 
 
             });
+    }
+
+    public void UpdateExp4Complete()
+    {
+        DocumentReference progressRef = db.Collection("users").Document(user.UserId).Collection("progress").Document("Learning Progress");
+
+        Dictionary<string, object> updates = new Dictionary<string, object>
+    {
+        { "ExperimentCompleted",  expcomplete + 1},
+
+
+
+    };
+        if (PlayerPrefs.GetInt("Exp4_s2") != 1)
+        {
+            progressRef.UpdateAsync(updates).ContinueWithOnMainThread(task =>
+                {
+                    Debug.Log("Updated progress data");
+                    PlayerPrefs.SetInt(key, 1);
+                    PlayerPrefs.Save();
+
+
+                });
+        }
     }
 
 }
