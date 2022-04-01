@@ -7796,7 +7796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -135, y: -44}
+  m_AnchoredPosition: {x: -135, y: -33}
   m_SizeDelta: {x: 120.7583, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &147940486
@@ -60672,6 +60672,7 @@ MonoBehaviour:
   _overall: {fileID: 0}
   active: {fileID: 0}
   hide: {fileID: 0}
+  completed: {fileID: 0}
   key: Exp4_s2
 --- !u!1 &1114872397
 GameObject:
@@ -89856,7 +89857,8 @@ MonoBehaviour:
       remove excess nitric\r and sulfuric acids."
     - "Finally, wash the product with two portions of 5 mL chilled methanol and\r
       air-dried the product. Recrystallise from methanol."
-    - Determine the weight and the melting point of the product.
+    - Observe the result of the final product. Determine the weight and the melting
+      point of the product.
 --- !u!1 &1587414708
 GameObject:
   m_ObjectHideFlags: 0
@@ -99437,7 +99439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -366.39594, y: 70}
+  m_AnchoredPosition: {x: -366.39594, y: 62}
   m_SizeDelta: {x: 704.5153, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1741332756
@@ -100783,7 +100785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -49, y: -54}
+  m_AnchoredPosition: {x: -49, y: -43}
   m_SizeDelta: {x: 48, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781255322

@@ -29,7 +29,7 @@ public class GetLearningProgress : MonoBehaviour
 
     private ListenerRegistration _listenerRegistration;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         db = FirebaseFirestore.DefaultInstance;
         auth = FirebaseAuth.DefaultInstance;
@@ -41,14 +41,30 @@ public class GetLearningProgress : MonoBehaviour
           {
               LearningProgressData learningprogress = snapshot.ConvertTo<LearningProgressData>();
               expcomplete = learningprogress.ExperimentCompleted;
-             // quizcomplete = learningprogress.QuizzesCompleted;
-              //total = expcomplete + quizcomplete;
+              quizcomplete = learningprogress.QuizzesCompleted;
+
+              total = expcomplete + quizcomplete;
               Debug.Log(total);
+              overall = total / 32.0f * 100.0f;
+              _overall.text = Math.Ceiling(overall).ToString() + "%";
+              Debug.Log(overall);
 
               _expCompleted.text = learningprogress.ExperimentCompleted.ToString();
               _quizCompleted.text = learningprogress.QuizzesCompleted.ToString();
-              _overall.text = learningprogress.OverallProgress.ToString() + "%";
+              // _overall.text = learningprogress.OverallProgress.ToString() + "%";
 
+
+              Dictionary<string, object> updates = new Dictionary<string, object>
+            {
+                { "OverallProgress",  Math.Ceiling(overall) }
+
+            };
+
+              progressRef.UpdateAsync(updates).ContinueWithOnMainThread(task =>
+                  {
+                      Debug.Log("Updated progress data");
+
+                  });
 
               Debug.Log(user.UserId);
 
@@ -95,30 +111,16 @@ public class GetLearningProgress : MonoBehaviour
             hide.SetActive(false);
             completed.SetActive(true);
         }
-        else if (PlayerPrefs.GetInt(key) == 2)
+        else
         {
             hide.SetActive(true);
             active.SetActive(false);
             completed.SetActive(false);
         }
-       /* overall = total / 32.0f * 100;
-        _overall.text = Math.Ceiling(overall).ToString() + "%";
+
         Debug.Log(overall);
-        DocumentReference progressRef = db.Collection("users").Document(user.UserId).Collection("progress").Document("Learning Progress");
-
-        Dictionary<string, object> updates = new Dictionary<string, object>
-    {
-        { "OverallProgress",  Math.Ceiling(overall) },
 
 
-
-    };
-
-        progressRef.UpdateAsync(updates).ContinueWithOnMainThread(task =>
-            {
-                Debug.Log("Updated progress data");
-
-            });*/
 
     }
     public void UpdateExpUnComplete()
