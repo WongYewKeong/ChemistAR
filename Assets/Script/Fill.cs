@@ -4,23 +4,10 @@ using UnityEngine;
 
 public class Fill : MonoBehaviour
 {
-    public Renderer rend;
+    public Renderer rend, rend1;
     public ParticleSystem particleSystem;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void fillAcid(float floatvalue)
     {
@@ -28,12 +15,18 @@ public class Fill : MonoBehaviour
         rend.material.SetFloat("Fill", floatvalue);
     }
 
+    public void fill(float floatvalue)
+    {
+
+        rend1.material.SetFloat("Fill", floatvalue);
+    }
+
     public void playParticle()
     {
         particleSystem.Play();
         var emission = particleSystem.emission;
         emission.enabled = true;
-        
+
     }
 
     public void stopParticle()

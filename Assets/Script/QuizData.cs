@@ -7,5 +7,5 @@ using Firebase.Firestore;
 public class QuizData
 {
     [FirestoreProperty]
-    public string[] Questions { get; set; }
+    public string Question { get; set; }
 }
