@@ -8,17 +8,22 @@ public class ProgressExp : MonoBehaviour
     public Text progressText;
 
     int progress = 0;
+    int maximum = 100;
+    public Image mask;
 
 
     public void progressInt()
     {
         progress += 100 / 8;
         progressText.text = progress.ToString() + "%";
+        float fillAmount = (float)progress / (float)maximum;
+        mask.fillAmount = fillAmount;
     }
 
     public void endExperiment()
     {
         progressText.text = "100%";
+        mask.fillAmount = 1;
     }
 
 }

@@ -5676,6 +5676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
+  rend1: {fileID: 0}
   particleSystem: {fileID: 0}
 --- !u!1 &104137170
 GameObject:
@@ -5792,6 +5793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 104139701}
+  rend1: {fileID: 0}
   particleSystem: {fileID: 0}
 --- !u!23 &104139701 stripped
 MeshRenderer:
@@ -7790,14 +7792,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 727100660}
+  - {fileID: 1991595404}
   m_Father: {fileID: 1681903166}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -135, y: -33}
-  m_SizeDelta: {x: 120.7583, y: 30}
+  m_AnchoredPosition: {x: -142.37164, y: -33}
+  m_SizeDelta: {x: 109.4474, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &147940486
 MonoBehaviour:
@@ -41685,14 +41687,14 @@ RectTransform:
   m_GameObject: {fileID: 727100659}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
   m_Children: []
-  m_Father: {fileID: 147940485}
-  m_RootOrder: 0
+  m_Father: {fileID: 1991595404}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -60.379196, y: -46.000023}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 120.7583, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &727100661
@@ -41717,10 +41719,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d54323c94c164de478170d5e7d0273be, type: 3}
-    m_FontSize: 20
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -41860,6 +41862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 1588773011}
+  rend1: {fileID: 0}
   particleSystem: {fileID: 0}
 --- !u!114 &731063873
 MonoBehaviour:
@@ -45872,6 +45875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 1588773011}
+  rend1: {fileID: 0}
   particleSystem: {fileID: 0}
 --- !u!1 &828831022
 GameObject:
@@ -51797,6 +51801,81 @@ Transform:
   m_Father: {fileID: 847531698}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 91.07, y: 0, z: 0}
+--- !u!1 &926917384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926917385}
+  - component: {fileID: 926917387}
+  - component: {fileID: 926917386}
+  m_Layer: 5
+  m_Name: ProgressBar_Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &926917385
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926917384}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1991595404}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.505, y: 3.0097}
+  m_SizeDelta: {x: 462.531, y: 64.17}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &926917386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926917384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.35955855, g: 0.38669792, b: 0.9433962, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 120fe2d8521a1fe4eb2c39a02da5520a, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &926917387
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926917384}
+  m_CullTransparentMesh: 0
 --- !u!1 &931261569
 GameObject:
   m_ObjectHideFlags: 0
@@ -89841,28 +89920,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   procedureText:
     sentences:
-    - Place 25 g (14.5 mL) of concentrated sulfuric acid in an Erlenmeyer flask,
-      and chill the acid in an ice-water bath.
-    - "Add with swirling, 0.05 mole (6.8 g, 6.2 mL) of methyl benzoate to the acid.\rContinue
-      to cool the mixture in the ice-water bath to reduce the heat, which is\r produced
-      in the reaction."
-    - "Prepare a mixture of 9 g (5 mL) of concentrated sulfuric acid and 0.085 mole
-      (7 g, 5\rmL) of concentrated nitric acid, and cool it in an ice-water bath."
+    - Place 25 g (14.5 mL) of <b>concentrated sulfuric acid</b> in an Erlenmeyer
+      flask, and chill the acid in an ice-water bath.
+    - "Add with <b>swirling</b>, 0.05 mole (6.8 g, 6.2 mL) of <b>methyl benzoate</b>
+      to the acid.\rContinue to cool the mixture in the ice-water bath to reduce
+      the heat, which is\r produced in the reaction."
+    - "Prepare a mixture of 9 g (5 mL) of <b>concentrated sulfuric acid</b> and 0.085
+      mole (7 g, 5\rmL) of <b>concentrated nitric acid</b>, and cool it in an <b>ice-water
+      bath</b>."
     - "While maintaining\r the internal reaction temperature at 5-15\xB0C, add (with
-      swirling) the cold acid mixture\r drop-wise to the previous methyl benzoate
+      swirling) the <b>cold acid mixture\r</b> drop-wise to the previous methyl benzoate
       solution. Continue to cool and swirl the\r reaction mixture for 10 minutes
       until all the acid has been added."
-    - "Pour the reaction mixture upon about 50 g of ice cubes contained in a 150
-      mL beaker,\r with stirring to precipitate the crude methyl m-nitrobenzoate
-      which contains a small\r amount of the ortho isomer and a trace of the para
-      form."
-    - Isolate the solid product by vacuum filtration through a Buchner funnel.
-    - "Wash the\r product thoroughly with two or three portions of 15 mL water to
-      remove excess nitric\r and sulfuric acids."
-    - "Finally, wash the product with two portions of 5 mL chilled methanol and\r
-      air-dried the product. Recrystallise from methanol."
-    - Observe the result of the final product. Determine the weight and the melting
-      point of the product.
+    - "Pour the <b>reaction mixture</b> upon about 50 g of ice cubes contained in
+      a 150 mL beaker,\r with <b>stirring (swirl)</b> to precipitate the crude methyl
+      m-nitrobenzoate which contains a small\r amount of the ortho isomer and a trace
+      of the para form."
+    - <b>Isolate</b> the solid product by vacuum filtration through a <b>Buchner
+      funnel</b>.
+    - "Add <b>distilled water</b>. <b>Wash</b> the\r product thoroughly with two
+      or three portions of 15 mL water to remove excess nitric\r and sulfuric acids."
+    - "Finally, <b>wash</b> the product with two portions of 5 mL <b>chilled methanol</b>
+      and\r air-dried the product. Recrystallise from methanol."
+    - Observe the result of the <b>final product</b>. Determine the weight and the
+      melting point of the product.
 --- !u!1 &1587414708
 GameObject:
   m_ObjectHideFlags: 0
@@ -93584,6 +93665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 1653145210}
+  rend1: {fileID: 0}
   particleSystem: {fileID: 693420810}
 --- !u!114 &1634311967
 MonoBehaviour:
@@ -94518,6 +94600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 1653145210}
+  rend1: {fileID: 0}
   particleSystem: {fileID: 0}
 --- !u!64 &1653145209
 MeshCollider:
@@ -99498,6 +99581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progressText: {fileID: 727100661}
+  mask: {fileID: 926917386}
 --- !u!1 &1742542633
 GameObject:
   m_ObjectHideFlags: 0
@@ -100790,7 +100874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -49, y: -43}
+  m_AnchoredPosition: {x: -42, y: -43}
   m_SizeDelta: {x: 48, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781255322
@@ -102186,7 +102270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1801001337
 Transform:
   m_ObjectHideFlags: 0
@@ -102383,6 +102467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 1588773011}
+  rend1: {fileID: 0}
   particleSystem: {fileID: 1141561497}
 --- !u!114 &1809445125
 MonoBehaviour:
@@ -110050,6 +110135,97 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991133328}
   m_Mesh: {fileID: -2354481552170621702, guid: b251644c4ff94ee408abff6c2b143f9e, type: 3}
+--- !u!1 &1991595403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1991595404}
+  - component: {fileID: 1991595407}
+  - component: {fileID: 1991595406}
+  - component: {fileID: 1991595405}
+  m_Layer: 5
+  m_Name: ProgressBar_Image_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1991595404
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991595403}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.30000004, y: 0.30000004, z: 0.30000004}
+  m_Children:
+  - {fileID: 926917385}
+  - {fileID: 727100660}
+  m_Father: {fileID: 147940485}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -47.000023}
+  m_SizeDelta: {x: 500, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1991595405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991595403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
+--- !u!114 &1991595406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991595403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.07700242, g: 0.7591298, b: 0.9716981, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: de60f736050bf449585ff3e554d97d9d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1991595407
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991595403}
+  m_CullTransparentMesh: 0
 --- !u!1 &1992728054
 GameObject:
   m_ObjectHideFlags: 0
@@ -119453,6 +119629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 976630359}
+  rend1: {fileID: 0}
   particleSystem: {fileID: 0}
 --- !u!4 &4222952068318414
 Transform:
@@ -139849,6 +140026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 1305440085}
+  rend1: {fileID: 0}
   particleSystem: {fileID: 0}
 --- !u!114 &8209103611859096643
 MonoBehaviour:

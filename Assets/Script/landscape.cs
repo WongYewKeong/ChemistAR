@@ -10,7 +10,7 @@ public class landscape : MonoBehaviour
     void Start()
     {
 
-        
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
 
     }
 
