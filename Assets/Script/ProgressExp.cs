@@ -11,10 +11,12 @@ public class ProgressExp : MonoBehaviour
     int maximum = 100;
     public Image mask;
 
+    
 
-    public void progressInt()
+
+    public void progressInt(int steps)
     {
-        progress += 100 / 8;
+        progress += 100 / steps;
         progressText.text = progress.ToString() + "%";
         float fillAmount = (float)progress / (float)maximum;
         mask.fillAmount = fillAmount;
