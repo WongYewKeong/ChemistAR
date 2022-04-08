@@ -27,11 +27,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Experiment5.unity
     guid: 2ddda654974868e45989469feb3892c0
   - enabled: 1
-    path: Assets/Scenes/Lab Safety.unity
-    guid: a2326bf7fe14dba42a84c778aa16e699
-  - enabled: 1
     path: Assets/Scenes/AR.unity
     guid: 439c5e0209f9c8e48a7b5044e26750d6
+  - enabled: 1
+    path: Assets/Scenes/Lab Safety.unity
+    guid: a2326bf7fe14dba42a84c778aa16e699
   - enabled: 1
     path: Assets/Scenes/NonAR.unity
     guid: 635c77d4dc72a19419d1abaa28dcb39a

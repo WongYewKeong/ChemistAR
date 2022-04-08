@@ -110,17 +110,20 @@ public class GetLearningProgress : MonoBehaviour
             active.SetActive(true);
             hide.SetActive(false);
             completed.SetActive(true);
+            expcomplete+=1;
+           
         }
         else
         {
             hide.SetActive(true);
             active.SetActive(false);
             completed.SetActive(false);
+            expcomplete-=1;
         }
 
         Debug.Log(overall);
 
-
+        Debug.Log(expcomplete);
 
     }
     public void UpdateExpUnComplete()
@@ -166,6 +169,15 @@ public class GetLearningProgress : MonoBehaviour
 
 
                 });
+        }
+    }
+
+    public void UpdateExp5Complete()
+    {
+        if (PlayerPrefs.GetInt("Exp5_s2") != 1)
+        {
+            PlayerPrefs.SetInt(key, 1);
+            PlayerPrefs.Save();
         }
     }
 

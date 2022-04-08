@@ -6516,7 +6516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0012739649}
+  m_AnchoredPosition: {x: 0, y: -0.0027139138}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &692346360
@@ -17256,6 +17256,7 @@ GameObject:
   - component: {fileID: 1658568475}
   - component: {fileID: 1658568474}
   - component: {fileID: 1658568478}
+  - component: {fileID: 1658568479}
   m_Layer: 5
   m_Name: ExpChosenAR
   m_TagString: Untagged
@@ -17369,6 +17370,20 @@ MonoBehaviour:
   _Procedure: {fileID: 0}
   collection: SEM2
   doc: Experiment5
+--- !u!114 &1658568479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658568473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035804de0fe6fac41912220b02856931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  expProgressText: {fileID: 1386655487}
+  key: Exp5_s2
 --- !u!1 &1667677558
 GameObject:
   m_ObjectHideFlags: 0
