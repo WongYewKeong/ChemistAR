@@ -10,7 +10,11 @@ public class GetQuizData : MonoBehaviour
 {
     [SerializeField] private TMP_Text _question;
 
-    [SerializeField] private string sem,exp,question;
+    [SerializeField] private string sem, exp, question;
+
+    [SerializeField] private List<string> options;
+
+    [SerializeField] private string correctAns;
 
     FirebaseFirestore db;
 
@@ -24,9 +28,9 @@ public class GetQuizData : MonoBehaviour
             var snapshot = task.Result;
             if (snapshot.Exists)
             {
-               
+
                 QuizData quiz = snapshot.ConvertTo<QuizData>();
-                _question.text=quiz.Question;
+                _question.text = quiz.Question;
             }
             else
             {

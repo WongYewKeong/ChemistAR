@@ -110,15 +110,15 @@ public class GetLearningProgress : MonoBehaviour
             active.SetActive(true);
             hide.SetActive(false);
             completed.SetActive(true);
-            expcomplete+=1;
-           
+
+
         }
         else
         {
             hide.SetActive(true);
             active.SetActive(false);
             completed.SetActive(false);
-            expcomplete-=1;
+
         }
 
         Debug.Log(overall);
@@ -167,17 +167,29 @@ public class GetLearningProgress : MonoBehaviour
                     PlayerPrefs.SetInt(key, 1);
                     PlayerPrefs.Save();
 
-
                 });
         }
     }
 
     public void UpdateExp5Complete()
     {
+        DocumentReference progressRef = db.Collection("users").Document(user.UserId).Collection("progress").Document("Learning Progress");
+
+        Dictionary<string, object> updates = new Dictionary<string, object>
+    {
+        { "ExperimentCompleted",  expcomplete + 1},
+
+
+
+    };
         if (PlayerPrefs.GetInt("Exp5_s2") != 1)
         {
-            PlayerPrefs.SetInt(key, 1);
-            PlayerPrefs.Save();
+            progressRef.UpdateAsync(updates).ContinueWithOnMainThread(task =>
+               {
+                   Debug.Log("Updated progress data");
+                   PlayerPrefs.SetInt(key, 1);
+                   PlayerPrefs.Save();
+               });
         }
     }
 
