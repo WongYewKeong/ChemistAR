@@ -8,10 +8,6 @@ using UnityEngine.UI;
 public class Scenechange : MonoBehaviour
 {
 
-    
-    public GameObject prefab;
-
-
     public void ChangeScene(string sceneName)
     {
 
@@ -50,10 +46,5 @@ public class Scenechange : MonoBehaviour
         Application.OpenURL(url);
     }
 
-    public void InstantiateObj()
-    {
-        GameObject leftMenu = Instantiate(prefab) as GameObject;
-        leftMenu.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
-    }
 
 }

@@ -20,7 +20,7 @@ public class SetReportData : MonoBehaviour
     [SerializeField] private TMP_Text expname;
     [SerializeField] private string docName;
 
-    public GameObject AddedReport,AddReportUI;
+    public GameObject AddedReport, AddReportUI;
 
     FirebaseFirestore db;
     FirebaseAuth auth;
@@ -48,7 +48,7 @@ public class SetReportData : MonoBehaviour
             Procedure = _Procedure.text,
             Results = _Results.text,
             Conclusion = _Conclusion.text,
-            References= _References.text
+            References = _References.text
 
         };
         DocumentReference reportRef = db.Collection("users").Document(user.UserId).Collection("report").Document(docName);

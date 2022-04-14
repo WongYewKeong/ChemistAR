@@ -14,7 +14,14 @@ public class GetQuizData : MonoBehaviour
 
     [SerializeField] private List<string> options;
 
-    [SerializeField] private string correctAns;
+    [SerializeField] private Text Opt1, Opt2, Opt3, Opt4;
+
+    [SerializeField] private int correctAns;
+
+    [SerializeField] private List<Button> buttons;
+
+    [SerializeField] private Color correctCol, wrongCol;
+    public GameObject feedback;
 
     FirebaseFirestore db;
 
@@ -37,5 +44,31 @@ public class GetQuizData : MonoBehaviour
                 Debug.Log("No data");
             }
         });
+
+        for (int i = 0; i < options.Count; i++)
+        {
+            Opt1.text = options[0];
+            Opt2.text = options[1];
+            Opt3.text = options[2];
+            Opt4.text = options[3];
+        }
+
+        
+
     }
+
+    public void CorrectAnswer()
+    {
+        
+        for (int i = 0; i < buttons.Count; i++)
+        {
+            buttons[i].enabled = false;
+            buttons[correctAns].image.color=correctCol;
+        }
+
+
+        feedback.SetActive(true);
+    }
+    
+
 }

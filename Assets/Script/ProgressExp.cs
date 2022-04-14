@@ -11,9 +11,6 @@ public class ProgressExp : MonoBehaviour
     int maximum = 100;
     public Image mask;
 
-    
-
-
     public void progressInt(int steps)
     {
         progress += 100 / steps;

@@ -36,23 +36,19 @@ public class GetExpData : MonoBehaviour
         DocumentReference expRef = db.Collection(collection).Document(doc);
 
         _listenerRegistration = expRef.Listen(snapshot =>
-  {
+        {
 
 
-      ExperimentData expdata = snapshot.ConvertTo<ExperimentData>();
-      _experimentName.text = expdata.ExpName;
-      _Introduction.text = expdata.Introduction.Replace("nn","\n").Replace("//","nn");
-      _Materials.text = expdata.Materials.Replace("nn","\n").Replace("//","nn");
-      _Objective.text = expdata.Objective.Replace("nn","\n");
-      _Procedure.text = expdata.Procedure.Replace("nn","\n").Replace("//","nn");
+            ExperimentData expdata = snapshot.ConvertTo<ExperimentData>();
+            _experimentName.text = expdata.ExpName;
+            _Introduction.text = expdata.Introduction.Replace("nn", "\n").Replace("//", "nn");
+            _Materials.text = expdata.Materials.Replace("nn", "\n").Replace("//", "nn");
+            _Objective.text = expdata.Objective.Replace("nn", "\n");
+            _Procedure.text = expdata.Procedure.Replace("nn", "\n").Replace("//", "nn");
 
+            Debug.Log(user.UserId);
 
-
-      Debug.Log(user.UserId);
-
-
-
-  });
+        });
     }
 
     // Update is called once per frame
@@ -61,23 +57,22 @@ public class GetExpData : MonoBehaviour
         _listenerRegistration.Stop();
     }
 
-    public void getIntro(){
+    public void getIntro()
+    {
         DocumentReference expRef = db.Collection(collection).Document(doc);
 
         _listenerRegistration = expRef.Listen(snapshot =>
-  {
+        {
 
 
-      ExperimentData expdata = snapshot.ConvertTo<ExperimentData>();
-      
-      IntroductionText.text = expdata.Introduction.Replace("nn","\n");
-      
+            ExperimentData expdata = snapshot.ConvertTo<ExperimentData>();
 
+            IntroductionText.text = expdata.Introduction.Replace("nn", "\n");
 
-      Debug.Log(user.UserId);
+            Debug.Log(user.UserId);
 
 
 
-  });
+        });
     }
 }

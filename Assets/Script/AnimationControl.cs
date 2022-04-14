@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class AnimationControl : MonoBehaviour
 {
-    public GameObject gameObjectHide,gameObjectActive,gameObject;
-    public void hideObject(){
+    public GameObject gameObjectHide, gameObjectActive, gameObject;
+    public void hideObject()
+    {
         gameObjectHide.SetActive(false);
         gameObject.SetActive(false);
     }
-    public void activeObject(){
+    public void activeObject()
+    {
         gameObjectActive.SetActive(true);
     }
 

@@ -18,7 +18,7 @@ public class GetLearningProgress : MonoBehaviour
     double overall;
 
     int total;
-
+    
 
     public GameObject active, hide, completed;
     FirebaseFirestore db;
@@ -141,7 +141,7 @@ public class GetLearningProgress : MonoBehaviour
         progressRef.UpdateAsync(updates).ContinueWithOnMainThread(task =>
             {
                 Debug.Log("Updated progress data");
-                PlayerPrefs.SetInt(key, 2);
+                PlayerPrefs.DeleteKey(key);
                 PlayerPrefs.Save();
 
 

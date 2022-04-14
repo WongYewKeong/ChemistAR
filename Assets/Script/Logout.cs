@@ -11,19 +11,20 @@ public class Logout : MonoBehaviour
     Firebase.Auth.FirebaseAuth auth;
     Firebase.Auth.FirebaseUser user;
 
-     private void Start() {
-      auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
+    private void Start()
+    {
+        auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
     }
 
-    
-    public void LogOut(string scenename)
-{
 
-  auth.SignOut();
-  
-SceneManager.LoadScene(scenename);
-  
-  
-}
+    public void LogOut(string scenename)
+    {
+
+        auth.SignOut();
+
+        SceneManager.LoadScene(scenename);
+
+
+    }
 }
 

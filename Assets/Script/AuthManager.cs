@@ -129,23 +129,23 @@ public class AuthManager : MonoBehaviour
             DocumentReference progressRef = db.Collection("users").Document(newUser.UserId).Collection("progress").Document("Learning Progress");
 
             Dictionary<string, object> users = new Dictionary<string, object>
-{
-        { "Username", Username },
-        { "Email", email }
+    {
+            { "Username", Username },
+            { "Email", email }
 
-};
+    };
             docRef.SetAsync(users).ContinueWithOnMainThread(task =>
             {
                 Debug.Log("Added data to the document in the users collection.");
             });
 
             Dictionary<string, object> progress = new Dictionary<string, object>
-{
-        { "ExperimentCompleted",  expcomplete},
-        { "QuizzesCompleted", quizcomplete },
-        { "OverallProgress",  overall}
+    {
+            { "ExperimentCompleted",  expcomplete},
+            { "QuizzesCompleted", quizcomplete },
+            { "OverallProgress",  overall}
 
-};
+    };
             progressRef.SetAsync(progress).ContinueWithOnMainThread(task =>
              {
                  Debug.Log("Added data to the document in the progress collection.");

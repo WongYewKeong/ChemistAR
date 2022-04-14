@@ -5,19 +5,19 @@ using UnityEngine.Video;
 
 namespace YoutubePlayer
 {
-public class YoutubeVideo : MonoBehaviour
-{
-    public string url;
-    // Start is called before the first frame update
-    void Start()
+    public class YoutubeVideo : MonoBehaviour
     {
-        GetComponent<VideoPlayer>().PlayYoutubeVideoAsync(url);
-    }
+        public string url;
+        // Start is called before the first frame update
+        void Start()
+        {
+            GetComponent<VideoPlayer>().PlayYoutubeVideoAsync(url);
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
-}
 }
