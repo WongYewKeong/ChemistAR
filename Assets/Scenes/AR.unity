@@ -1275,6 +1275,7 @@ GameObject:
   - component: {fileID: 203201841}
   - component: {fileID: 203201842}
   - component: {fileID: 203201843}
+  - component: {fileID: 203201844}
   m_Layer: 0
   m_Name: Flask_water
   m_TagString: Untagged
@@ -1482,8 +1483,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.45373505, y: 0.6392572, z: 0.39688322}
-  m_Center: {x: -0.09101548, y: 0.26561943, z: 0.08199939}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: -0.09101548, y: 0.31502277, z: 0.08199939}
 --- !u!64 &203201843
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1498,6 +1499,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 217c04de4fe6a3345a209b712c4e99f6, type: 3}
+--- !u!114 &203201844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203201834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4bbdb87815bdbc488785b0dc73b5d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMesh: {fileID: 564168300}
 --- !u!1 &223214368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,6 +1855,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7288924413623989898}
+        m_TargetAssemblyTypeName: TextMeshColor, Assembly-CSharp
+        m_MethodName: TextColor
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4013,6 +4039,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1505447386}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2024922833}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20705,8 +20743,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.024046483, y: 0.024024334, z: 0.031554136}
-  m_Center: {x: 0.00055834156, y: -0.0020121706, z: -0.005777063}
+  m_Size: {x: 0.024046483, y: 0.024024334, z: 0.05356312}
+  m_Center: {x: 0.00055834197, y: -0.0020121706, z: 0.0052274377}
 --- !u!23 &2024922835
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21945,18 +21983,6 @@ MonoBehaviour:
       - m_Target: {fileID: 624079531}
         m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
         m_MethodName: set_interactable
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2024922833}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25019,6 +25045,7 @@ GameObject:
   - component: {fileID: 7288924413623989895}
   - component: {fileID: 7288924413623989896}
   - component: {fileID: 7288924413623989897}
+  - component: {fileID: 7288924413623989898}
   m_Layer: 0
   m_Name: Flask_Hcl
   m_TagString: Untagged
@@ -25160,7 +25187,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5816982, y: 0.72396636, z: 0.23000002}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: -0.021619968, y: 0.30731943, z: -0.0051454795}
 --- !u!64 &7288924413623989897
 MeshCollider:
@@ -25176,6 +25203,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 217c04de4fe6a3345a209b712c4e99f6, type: 3}
+--- !u!114 &7288924413623989898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7288924413623989891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4bbdb87815bdbc488785b0dc73b5d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMesh: {fileID: 1283809267}
 --- !u!4 &7288924413624150689
 Transform:
   m_ObjectHideFlags: 0
