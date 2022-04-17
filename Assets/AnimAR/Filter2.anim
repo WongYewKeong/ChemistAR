@@ -448,6 +448,6 @@ AnimationClip:
     functionName: fill
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: 0.546
+    floatParameter: 0.5469
     intParameter: 0
     messageOptions: 0

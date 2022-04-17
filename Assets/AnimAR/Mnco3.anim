@@ -1173,8 +1173,22 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 1.3666667
+    functionName: playParticle
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 3.45
+    functionName: stopParticle
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 5.5
-    functionName: changeColorMno3
+    functionName: changeColorMnCo3
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

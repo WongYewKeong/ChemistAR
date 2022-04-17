@@ -422,6 +422,13 @@ AnimationClip:
     floatParameter: 0.5465
     intParameter: 0
     messageOptions: 0
+  - time: 4.4666667
+    functionName: TextColor
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 4.5
     functionName: stopParticle
     data: 
