@@ -9,8 +9,7 @@ public class ExpProgress : MonoBehaviour
 
     public string key;
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
         if (PlayerPrefs.GetInt(key) == 1)
         {

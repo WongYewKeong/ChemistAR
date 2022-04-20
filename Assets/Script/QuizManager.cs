@@ -25,12 +25,10 @@ public class QuizManager : MonoBehaviour
     public int score;
     public TMP_Text QuesNo;
     int i = 1;
-
     public string doc;
     FirebaseFirestore db;
     FirebaseAuth auth;
     FirebaseUser user;
-
 
     private void Start()
     {
@@ -123,6 +121,7 @@ public class QuizManager : MonoBehaviour
             GameOver();
         }
 
-
     }
+
+
 }
