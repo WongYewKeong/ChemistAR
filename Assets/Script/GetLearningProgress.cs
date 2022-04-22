@@ -26,7 +26,7 @@ public class GetLearningProgress : MonoBehaviour
     public string key;
 
     private ListenerRegistration _listenerRegistration;
-    // Start is called before the first frame update
+
     void Awake()
     {
         db = FirebaseFirestore.DefaultInstance;
@@ -122,9 +122,7 @@ public class GetLearningProgress : MonoBehaviour
 
         Dictionary<string, object> updates = new Dictionary<string, object>
     {
-        { "ExperimentCompleted",  expcomplete - 1 },
-
-
+        { "ExperimentCompleted",  expcomplete - 1 }
 
     };
 
