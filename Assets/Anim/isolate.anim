@@ -1472,10 +1472,24 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 2.15
+    functionName: playParticle
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 2.6833334
     functionName: fillAcid
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0.48
+    intParameter: 0
+    messageOptions: 0
+  - time: 4.95
+    functionName: stopParticle
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
     intParameter: 0
     messageOptions: 0
