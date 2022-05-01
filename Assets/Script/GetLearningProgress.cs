@@ -64,14 +64,9 @@ public class GetLearningProgress : MonoBehaviour
 
                   });
 
-              Debug.Log(user.UserId);
-
-
           });
 
-
     }
-
 
     void OnDestroy()
     {

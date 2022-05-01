@@ -46829,7 +46829,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 392865750ec844e4f9851a08bc5cc05c, type: 2}
     - target: {fileID: 919132149155446097, guid: a865bda0fb492024f913045a8718336e, type: 3}
       propertyPath: m_Name
-      value: CGFigures - Beakers with Liquids
+      value: Beakers with Liquids
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a865bda0fb492024f913045a8718336e, type: 3}
@@ -48438,7 +48438,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: da3619f9d594d3446a3bcde8f39acec4, type: 2}
     - target: {fileID: 919132149155446097, guid: a865bda0fb492024f913045a8718336e, type: 3}
       propertyPath: m_Name
-      value: CGFigures - Beakers with Liquids (1)
+      value: Beakers with Liquids (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a865bda0fb492024f913045a8718336e, type: 3}

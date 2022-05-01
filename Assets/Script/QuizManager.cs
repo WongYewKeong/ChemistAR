@@ -32,38 +32,15 @@ public class QuizManager : MonoBehaviour
 
     private void Start()
     {
-
         totalQuestions = QnA.Count;
         GoPanel.SetActive(false);
         generateQuestion();
         QuesNo.text = "Questions " + i;
     }
 
-
-
     public void retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    void GameOver()
-    {
-        Quizpanel.SetActive(false);
-        GoPanel.SetActive(true);
-        ScoreTxt.text = score + "/" + totalQuestions;
-        db = FirebaseFirestore.DefaultInstance;
-        auth = FirebaseAuth.DefaultInstance;
-        user = auth.CurrentUser;
-        DocumentReference quizRef = db.Collection("users").Document(user.UserId).Collection("progress").Document(doc);
-
-        Dictionary<string, object> quizScore = new Dictionary<string, object>
-    {
-            { "Score", score }
-    };
-        quizRef.SetAsync(quizScore).ContinueWithOnMainThread(task =>
-        {
-            Debug.Log("Added data to the document in the users collection.");
-        });
     }
 
     public void correct()
@@ -107,9 +84,7 @@ public class QuizManager : MonoBehaviour
     {
         if (QnA.Count > 0)
         {
-
             currentQuestion = Random.Range(0, QnA.Count);
-
             QuestionTxt.text = QnA[currentQuestion].Question;
             correctText.SetActive(false);
             wrongText.SetActive(false);
@@ -123,5 +98,24 @@ public class QuizManager : MonoBehaviour
 
     }
 
+    void GameOver()
+    {
+        Quizpanel.SetActive(false);
+        GoPanel.SetActive(true);
+        ScoreTxt.text = score + "/" + totalQuestions;
+        db = FirebaseFirestore.DefaultInstance;
+        auth = FirebaseAuth.DefaultInstance;
+        user = auth.CurrentUser;
+        DocumentReference quizRef = db.Collection("users").Document(user.UserId).Collection("progress").Document(doc);
+
+        Dictionary<string, object> quizScore = new Dictionary<string, object>
+    {
+            { "Score", score }
+    };
+        quizRef.SetAsync(quizScore).ContinueWithOnMainThread(task =>
+        {
+            Debug.Log("Added data to the document in the progress collection.");
+        });
+    }
 
 }

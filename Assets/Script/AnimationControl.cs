@@ -6,7 +6,6 @@ public class AnimationControl : MonoBehaviour
 {
     public GameObject gameObjectHide, gameObjectActive, gameObject;
     
-
     public void hideObject()
     {
         gameObjectHide.SetActive(false);

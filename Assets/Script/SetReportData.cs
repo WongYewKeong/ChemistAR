@@ -32,12 +32,10 @@ public class SetReportData : MonoBehaviour
         auth = FirebaseAuth.DefaultInstance;
         user = auth.CurrentUser;
         Debug.Log(user.UserId);
-
         _experimentTitle.text = expname.text;
 
     }
 
-    // Update is called once per frame
     public void AddReport()
     {
 
@@ -49,7 +47,6 @@ public class SetReportData : MonoBehaviour
             Results = _Results.text,
             Conclusion = _Conclusion.text,
             References = _References.text
-
         };
         DocumentReference reportRef = db.Collection("users").Document(user.UserId).Collection("report").Document(docName);
         reportRef.SetAsync(reportData);

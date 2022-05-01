@@ -27,7 +27,6 @@ public class AuthManager : MonoBehaviour
 
     public int expcomplete, quizcomplete, overall = 0;
 
-
     bool isSignedIn = false;
 
     private static bool created = false;
@@ -38,7 +37,6 @@ public class AuthManager : MonoBehaviour
         {
             DontDestroyOnLoad(this.gameObject);
             created = true;
-
         }
     }
 
@@ -80,18 +78,6 @@ public class AuthManager : MonoBehaviour
         warningreg.text = "";
     }
 
-    public void LoginUser()
-    {
-        if (string.IsNullOrEmpty(emailLogin.text) || string.IsNullOrEmpty(passwordLogin.text))
-        {
-            warningtext.text = "Please Enter Email or Password";
-            return;
-        }
-
-
-        SignInUser(emailLogin.text, passwordLogin.text);
-    }
-
     public void RegUser()
     {
         if (string.IsNullOrEmpty(username.text) || string.IsNullOrEmpty(emailRegister.text) || string.IsNullOrEmpty(passReg.text))
@@ -121,8 +107,7 @@ public class AuthManager : MonoBehaviour
 
             // Firebase user has been created.
             Firebase.Auth.FirebaseUser newUser = task.Result;
-            Debug.LogFormat("Firebase user created successfully: {0} ({1})",
-                newUser.DisplayName, newUser.UserId);
+            Debug.LogFormat("Firebase user created successfully: {0} ({1})", newUser.DisplayName, newUser.UserId);
 
             db = FirebaseFirestore.DefaultInstance;
             DocumentReference docRef = db.Collection("users").Document(newUser.UserId);
@@ -151,11 +136,21 @@ public class AuthManager : MonoBehaviour
                  Debug.Log("Added data to the document in the progress collection.");
              });
 
-
         });
     }
 
-    public void SignInUser(string email, string password)
+    public void LoginUser()
+    {
+        if (string.IsNullOrEmpty(emailLogin.text) || string.IsNullOrEmpty(passwordLogin.text))
+        {
+            warningtext.text = "Please Enter Email or Password";
+            return;
+        }
+
+        SignInUser(emailLogin.text, passwordLogin.text);
+    }
+
+    void SignInUser(string email, string password)
     {
         auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task =>
         {
@@ -172,10 +167,9 @@ public class AuthManager : MonoBehaviour
             }
 
             Firebase.Auth.FirebaseUser newUser = task.Result;
-            Debug.LogFormat("User signed in successfully: {0} ({1})",
-                newUser.DisplayName, newUser.UserId);
+            Debug.LogFormat("User signed in successfully: {0} ({1})", newUser.DisplayName, newUser.UserId);
 
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("Main Menu");
         });
     }
 
@@ -200,8 +194,6 @@ public class AuthManager : MonoBehaviour
             {
                 Debug.Log("Signed in " + user.UserId);
                 isSignedIn = true;
-
-
             }
         }
     }
@@ -221,7 +213,7 @@ public class AuthManager : MonoBehaviour
             {
                 isSigned = true;
 
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene("Main Menu");
 
             }
         }
