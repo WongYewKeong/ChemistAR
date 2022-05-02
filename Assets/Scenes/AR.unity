@@ -2614,6 +2614,10 @@ MonoBehaviour:
     - '<b>Heat</b> 8ml <b>HCl</b> and 2.5ml <b>distilled water</b>. Maintain the
       temperature around 70 -80 degree Celsius.
 
+
+      Hint: Click on material on
+      screen to add the material
+
 '
     - '<b>Take out </b>the solution (hot HCl). '
     - Add slowly <b>Manganese(IV) oxide</b> MnO2 (2g) to hot Hydrochloric acid HCl.
@@ -10147,10 +10151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectable: {fileID: 0}
-  text: 'Tips: You can move device closer to look clearly the 3D models
-
-    (Click
-    on materials to add the materials)'
+  text: 'Tips: You can move device closer to look clearly the 3D models'
 --- !u!114 &784915637
 MonoBehaviour:
   m_ObjectHideFlags: 0

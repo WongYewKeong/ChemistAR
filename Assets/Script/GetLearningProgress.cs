@@ -8,7 +8,6 @@ using Firebase.Auth;
 using System;
 public class GetLearningProgress : MonoBehaviour
 {
-
     [SerializeField] private Text _expCompleted;
     [SerializeField] private Text _quizCompleted;
     [SerializeField] private Text _overall;
@@ -50,22 +49,16 @@ public class GetLearningProgress : MonoBehaviour
               _expCompleted.text = learningprogress.ExperimentCompleted.ToString();
               _quizCompleted.text = learningprogress.QuizzesCompleted.ToString();
 
-
-
               Dictionary<string, object> updates = new Dictionary<string, object>
             {
                 { "OverallProgress",  Math.Ceiling(overall) }
-
             };
 
               progressRef.UpdateAsync(updates).ContinueWithOnMainThread(task =>
                   {
                       Debug.Log("Updated progress data");
-
                   });
-
           });
-
     }
 
     void OnDestroy()
