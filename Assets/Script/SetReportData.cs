@@ -38,7 +38,6 @@ public class SetReportData : MonoBehaviour
 
     public void AddReport()
     {
-
         ReportData reportData = new ReportData
         {
             ExperimentTitle = _experimentTitle.text,
