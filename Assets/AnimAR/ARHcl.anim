@@ -485,6 +485,13 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 2.9833333
+    functionName: Pulse
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.9833333
     functionName: fillAcid
     data: 
     objectReferenceParameter: {fileID: 0}
