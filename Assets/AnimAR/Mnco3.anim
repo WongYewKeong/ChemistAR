@@ -339,7 +339,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 5.0333333
+        time: 4.7166667
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -979,7 +979,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 5.0333333
+        time: 4.7166667
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -1326,6 +1326,13 @@ AnimationClip:
     messageOptions: 0
   - time: 3.7
     functionName: stopParticle
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 3.9
+    functionName: Pulse
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
