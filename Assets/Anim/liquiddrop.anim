@@ -118,23 +118,23 @@ AnimationClip:
       - serializedVersion: 3
         time: 1
         value: 0.556
-        inSlope: -0.013333322
-        outSlope: -0.013333322
+        inSlope: -0.0066666603
+        outSlope: -0.0066666603
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.6666666
+        time: 2.4166667
         value: 0.55
-        inSlope: -0.026181743
-        outSlope: -0.026181743
+        inSlope: -0.0137142455
+        outSlope: -0.0137142455
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.9166666
+        time: 2.75
         value: 0.5
         inSlope: 0
         outSlope: 0
@@ -184,7 +184,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.1666667
+    m_StopTime: 3
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -371,23 +371,23 @@ AnimationClip:
       - serializedVersion: 3
         time: 1
         value: 0.556
-        inSlope: -0.013333322
-        outSlope: -0.013333322
+        inSlope: -0.0066666603
+        outSlope: -0.0066666603
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.6666666
+        time: 2.4166667
         value: 0.55
-        inSlope: -0.026181743
-        outSlope: -0.026181743
+        inSlope: -0.0137142455
+        outSlope: -0.0137142455
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.9166666
+        time: 2.75
         value: 0.5
         inSlope: 0
         outSlope: 0
@@ -534,14 +534,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 2
+  - time: 2.8333333
     functionName: stopParticle
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 2.1666667
+  - time: 3
     functionName: activeObject
     data: 
     objectReferenceParameter: {fileID: 0}

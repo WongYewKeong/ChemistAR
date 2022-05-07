@@ -473,6 +473,13 @@ AnimationClip:
     floatParameter: 0.57
     intParameter: 0
     messageOptions: 0
+  - time: 3.6333334
+    functionName: Pulse
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 3.85
     functionName: hideObject
     data: 
