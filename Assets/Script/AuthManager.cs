@@ -85,6 +85,11 @@ public class AuthManager : MonoBehaviour
             warningreg.text = "Please Enter All The Field Above";
             return;
         }
+        else if (username.text.Length > 32)
+        {
+            warningreg.text = "Username should not more than 32 characters!";
+            return;
+        }
 
         CreateUser(emailRegister.text, passReg.text, username.text);
     }
