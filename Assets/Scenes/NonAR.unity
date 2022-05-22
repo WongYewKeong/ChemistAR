@@ -78909,7 +78909,7 @@ MonoBehaviour:
     - "While maintaining\r the internal reaction temperature at 5-15\xB0C, add (with
       swirling) the <b>cold acid mixture\r</b> drop-wise to the previous methyl benzoate
       solution. Continue to cool and swirl the\r reaction mixture for <b>10 minutes</b>
-      until all the acid has been added. <b>(Click on 10minutes end)</b>"
+      until all the acid has been added. <b>(Click 10minutes end)</b>"
     - "Pour the <b>reaction mixture</b> upon about 50 g of ice cubes contained in
       a 150 mL beaker,\r with <b>stirring (swirl)</b> to precipitate the crude methyl
       m-nitrobenzoate which contains a small\r amount of the ortho isomer and a trace
@@ -80153,7 +80153,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -43.460163, y: -3.4785}
-  m_SizeDelta: {x: 595.9217, y: 93.0432}
+  m_SizeDelta: {x: 598.5764, y: 93.0432}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1605735287
 MonoBehaviour:
