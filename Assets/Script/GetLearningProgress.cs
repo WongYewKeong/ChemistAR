@@ -11,6 +11,8 @@ public class GetLearningProgress : MonoBehaviour
     [SerializeField] private Text _expCompleted;
     [SerializeField] private Text _quizCompleted;
     [SerializeField] private Text _overall;
+    [SerializeField] private Text _expPercentage;
+    [SerializeField] private Text _quizPercentage;
 
     int expcomplete;
     int quizcomplete;
@@ -46,8 +48,10 @@ public class GetLearningProgress : MonoBehaviour
               _overall.text = Math.Ceiling(overall).ToString() + "%";
               Debug.Log(overall);
 
-              _expCompleted.text = learningprogress.ExperimentCompleted.ToString();
-              _quizCompleted.text = learningprogress.QuizzesCompleted.ToString();
+              _expCompleted.text = learningprogress.ExperimentCompleted.ToString() + "/16";
+              _quizCompleted.text = learningprogress.QuizzesCompleted.ToString() + "/2";
+              _expPercentage.text = Math.Ceiling(expcomplete/ 16.0f*100.0f).ToString()+ "%";
+              _quizPercentage.text = Math.Ceiling(quizcomplete/ 2.0f*100.0f).ToString()+ "%";
 
               Dictionary<string, object> updates = new Dictionary<string, object>
             {
