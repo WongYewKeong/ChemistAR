@@ -2199,7 +2199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlaneIndicator: {fileID: 1353731089078378, guid: b9ed12c68682d5b49bfa70ee9d71602d, type: 3}
-  Height: 0.1
+  Height: 0.8
   OnInteractiveHitTest:
     m_PersistentCalls:
       m_Calls:
@@ -2232,7 +2232,7 @@ MonoBehaviour:
   m_Script: {fileID: 1027344429, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mDisplayAdvanced: 0
+  mDisplayAdvanced: 1
   OnInputReceivedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -9030,7 +9030,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579990362}
   m_LocalRotation: {x: -0, y: 0.7096944, z: -0.7045097, w: 0}
-  m_LocalPosition: {x: 0.326, y: -0.206, z: 0.389}
+  m_LocalPosition: {x: 0.299, y: -0.206, z: 0.389}
   m_LocalScale: {x: 0.056685656, y: 0.056685697, z: 0.0248665}
   m_Children: []
   m_Father: {fileID: 5268595483707380351}
@@ -26584,6 +26584,8 @@ MonoBehaviour:
   _expCompleted: {fileID: 0}
   _quizCompleted: {fileID: 0}
   _overall: {fileID: 0}
+  _expPercentage: {fileID: 0}
+  _quizPercentage: {fileID: 0}
   active: {fileID: 0}
   hide: {fileID: 0}
   completed: {fileID: 0}
@@ -41419,7 +41421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8173287432035639068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.281, y: 0.271, z: 0.024}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 7288924413624150691}

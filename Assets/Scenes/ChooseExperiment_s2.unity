@@ -18632,7 +18632,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284808627}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 85daae69d278a1848b68b7cc2d87f2f6, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 88ed744a487e33a44aaa120f61193924, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -32026,6 +32026,8 @@ MonoBehaviour:
   _expCompleted: {fileID: 0}
   _quizCompleted: {fileID: 0}
   _overall: {fileID: 0}
+  _expPercentage: {fileID: 0}
+  _quizPercentage: {fileID: 0}
   active: {fileID: 614061697}
   hide: {fileID: 249357325}
   completed: {fileID: 1041190743}
@@ -40539,6 +40541,8 @@ MonoBehaviour:
   _expCompleted: {fileID: 0}
   _quizCompleted: {fileID: 0}
   _overall: {fileID: 0}
+  _expPercentage: {fileID: 0}
+  _quizPercentage: {fileID: 0}
   active: {fileID: 1085313631}
   hide: {fileID: 591501196}
   completed: {fileID: 249240447}
@@ -68255,6 +68259,8 @@ MonoBehaviour:
   _expCompleted: {fileID: 0}
   _quizCompleted: {fileID: 0}
   _overall: {fileID: 0}
+  _expPercentage: {fileID: 0}
+  _quizPercentage: {fileID: 0}
   active: {fileID: 765980259}
   hide: {fileID: 2019235589}
   completed: {fileID: 1383945334}
@@ -74240,6 +74246,8 @@ MonoBehaviour:
   _expCompleted: {fileID: 0}
   _quizCompleted: {fileID: 0}
   _overall: {fileID: 0}
+  _expPercentage: {fileID: 0}
+  _quizPercentage: {fileID: 0}
   active: {fileID: 803066761}
   hide: {fileID: 1850101590}
   completed: {fileID: 1766485348}
@@ -97736,6 +97744,8 @@ MonoBehaviour:
   _expCompleted: {fileID: 0}
   _quizCompleted: {fileID: 0}
   _overall: {fileID: 0}
+  _expPercentage: {fileID: 0}
+  _quizPercentage: {fileID: 0}
   active: {fileID: 215783856}
   hide: {fileID: 328073152}
   completed: {fileID: 2127958304}
@@ -100298,6 +100308,8 @@ MonoBehaviour:
   _expCompleted: {fileID: 0}
   _quizCompleted: {fileID: 0}
   _overall: {fileID: 0}
+  _expPercentage: {fileID: 0}
+  _quizPercentage: {fileID: 0}
   active: {fileID: 667390196}
   hide: {fileID: 1610787563}
   completed: {fileID: 1750615470}
@@ -132617,6 +132629,8 @@ MonoBehaviour:
   _expCompleted: {fileID: 0}
   _quizCompleted: {fileID: 0}
   _overall: {fileID: 0}
+  _expPercentage: {fileID: 0}
+  _quizPercentage: {fileID: 0}
   active: {fileID: 2039967270}
   hide: {fileID: 2095159690}
   completed: {fileID: 861257423}
