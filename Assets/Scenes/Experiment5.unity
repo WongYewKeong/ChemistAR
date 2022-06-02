@@ -2527,8 +2527,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 10, y: -479}
-  m_SizeDelta: {x: 554.97, y: 100}
+  m_AnchoredPosition: {x: 0.0010071, y: -479}
+  m_SizeDelta: {x: 640, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &242504812
 MonoBehaviour:
@@ -6139,7 +6139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -391}
+  m_AnchoredPosition: {x: 0, y: -357}
   m_SizeDelta: {x: 443.889, y: 63.390015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &590312664
@@ -6626,7 +6626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -255}
+  m_AnchoredPosition: {x: 0, y: -229}
   m_SizeDelta: {x: 562.059, y: 121.88098}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &626943407
@@ -7339,7 +7339,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0008381265}
+  m_AnchoredPosition: {x: 0, y: 0.0031365934}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &692346360
@@ -8099,8 +8099,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -479}
-  m_SizeDelta: {x: 540, y: 115}
+  m_AnchoredPosition: {x: 0, y: -434.5464}
+  m_SizeDelta: {x: 540, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &832322985
 MonoBehaviour:
@@ -11915,7 +11915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -830}
+  m_AnchoredPosition: {x: 0, y: -781}
   m_SizeDelta: {x: 0, y: 333.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1119887524
@@ -18666,8 +18666,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26
-  m_fontSizeBase: 26
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -20403,6 +20403,8 @@ MonoBehaviour:
   _expCompleted: {fileID: 0}
   _quizCompleted: {fileID: 0}
   _overall: {fileID: 0}
+  _expPercentage: {fileID: 0}
+  _quizPercentage: {fileID: 0}
   active: {fileID: 0}
   hide: {fileID: 0}
   completed: {fileID: 0}
@@ -22361,7 +22363,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -629}
+  m_AnchoredPosition: {x: 0, y: -583}
   m_SizeDelta: {x: 443.889, y: 63.390015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1902290008
